@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,8 @@ namespace TextureAtlas
     {
         public MainWindow()
         {
+            LogManager.GetCurrentClassLogger().Info("InitializeComponent");
+
             InitializeComponent();
         }
     }
